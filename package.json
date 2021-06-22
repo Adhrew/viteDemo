@@ -1,17 +1,26 @@
 {
   "name": "viteTest",
   "version": "0.0.0",
+  "description": "vite-vue3 BeePal PC",
+  "private": true,
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --host",
     "build": "vite build",
     "serve": "vite preview"
   },
   "dependencies": {
-    "vue": "^3.0.5"
+    "ant-design-vue": "^2.2.0-beta.4",
+    "axios": "^0.20.0-0",
+    "vue": "^3.0.5",
+    "vue-i18n": "^9.1.6",
+    "vue-router": "^4.0.10",
+    "vuex": "^4.0.2"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^1.1.5",
     "@vue/compiler-sfc": "^3.0.5",
+    "autoprefixer": "^10.2.6",
+    "sass": "^1.35.1",
     "vite": "^2.1.0"
   }
 }
