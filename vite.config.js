@@ -1,9 +1,8 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import path from 'path'
-const port = process.env.port || process.env.npm_config_port || 8888; // dev port
 export default defineConfig({
-  publicDir: 'public',
+  mode: 'production',
   resolve: {
     alias: {
       '@': path.resolve(__dirname, '/src'),
@@ -12,7 +11,7 @@ export default defineConfig({
   server: {
     https: false,
     open: false,
-    port: port,
+    port: 8888,
     proxy: {
       '/api': {
         target: 'http://beelive-uat.marbleio.tech/api/',
