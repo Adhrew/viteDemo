@@ -8,6 +8,13 @@ export default defineConfig({
       '@': path.resolve(__dirname, '/src'),
     },
   },
+  css: {
+    preprocessorOptions: {
+      scss: {
+        additionalData: '@import "./src/styles/themes.scss";' // 添加公共样式
+      }
+    }
+  },
   server: {
     https: false,
     open: false,
