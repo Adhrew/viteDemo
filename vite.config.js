@@ -11,7 +11,7 @@ export default defineConfig({
   css: {
     preprocessorOptions: {
       scss: {
-        additionalData: '@import "./src/styles/themes.scss";' // 添加公共样式
+        additionalData: '@import "./src/styles/themes.scss"; @import "./src/styles/utils.scss";' // 添加公共样式
       }
     }
   },

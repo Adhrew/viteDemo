@@ -9,15 +9,15 @@ import "@/styles/basic.scss";
 // 全局settings
 import settings from './config/index';
 // ant-design-vue@next
-import { Button } from 'ant-design-vue';
-import 'ant-design-vue/dist/antd.js';
+import Antd from 'ant-design-vue';
+import 'ant-design-vue/dist/antd.css';
 const app = createApp(App);
 // 引入全局settings
 app.config.globalProperties.settings = settings;
 // 引入vue-i18n-next
 app.use(i18n);
 // 引入 ant-design-vue@next
-app.use(Button);
+app.use(Antd);
 app
   .use(store)
   .use(router)
